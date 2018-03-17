@@ -42,7 +42,7 @@ lazy val doobieWarts =
 lazy val postgisDep = "net.postgis" % "postgis-jdbc" % postGisVersion
 
 // run dependencyUpdates whenever we [re]load. Spooky eh?
-onLoad in Global := { s => "dependencyUpdates" :: s }
+// onLoad in Global := { s => "dependencyUpdates" :: s }
 
 lazy val compilerFlags = Seq(
   scalacOptions ++= (
